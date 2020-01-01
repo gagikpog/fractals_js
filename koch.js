@@ -16,7 +16,6 @@ function tg(start, end, n = 0) {
 
     if (!n) {
         ctx.beginPath();
-        ctx.strokeStyle = '#fff';
         ctx.moveTo(start.x, start.y);
         ctx.lineTo(B.x, B.y);
         ctx.lineTo(C.x, C.y);
@@ -41,6 +40,7 @@ function drawKoch(config) {
     const A = Pos(centerX - config.length / 2, centerY + h / 3);
     const B = Pos(centerX + config.length / 2, centerY + h / 3);
     const C = Pos(centerX, centerY - h * 2 / 3);
+    ctx.strokeStyle = '#fff';
 
     tg(A, B, config.deep);
     tg(C, A, config.deep);

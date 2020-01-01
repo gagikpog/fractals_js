@@ -42,9 +42,15 @@ function getConfig() {
 }
 
 function onPaint() {
+    const angleRow = document.querySelector('.row-angle');
     switch (currentTab) {
         case 'koch':
                 printKoch();
+                angleRow && (angleRow.hidden = false);
+            break;
+        case 'carpet':
+                printCarpet();
+                angleRow && (angleRow.hidden = true);
             break;
         default:
             break;
