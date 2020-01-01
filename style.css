@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border-color: gray;
 }
 html, body {
     height: 100vh;
@@ -30,4 +31,17 @@ html, body {
     font-size: 15pt;
     background-color: #161616;
     color: #fff;
+}
+.tab {
+    padding: 5px 10px;
+    background-color: #161616;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.tab:hover {
+    background-color: gray !important;
+}
+.tab.active {
+    background-color: #533e3e;
 }

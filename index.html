@@ -5,23 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fractal</title>
-    <script src="./script.js"></script>
+    <script src="./koch.js"></script>
+    <script src="./main.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <canvas id="draw" width="1920px" height="976px"></canvas>
     <div class="menu">
         <div class="row">
+            <button onclick="changeTab(this)" class="tab active" id="koch" > Кош </button>
+            <button onclick="changeTab(this)" class="tab" id="carpet" > Серпинский ковер </button>
+        </div>
+        <div class="row">
             <label for=""> Глубина </label>
-            <input name="deep" onchange="show()" id="deep" type="number" value="5">
+            <input name="deep" onchange="onPaint()" id="deep" type="number" value="5">
         </div>
         <div class="row">
             <label for=""> Угл </label>
-            <input name="angle" onchange="show()" id="angle" type="number" value="60">
+            <input name="angle" onchange="onPaint()" id="angle" type="number" value="60">
         </div>
         <div class="row">
             <label for=""> Размер </label>
-            <input name="size" step="5" onchange="show()" id="size" type="number" value="700">
+            <input name="size" step="5" onchange="onPaint()" id="size" type="number" value="700">
         </div>
 
     </div>
