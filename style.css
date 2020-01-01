@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100vh;
+    background-color: #161616;
+    color: white;
+}
+#draw {
+    width: 100%;
+    height: 100%;
+
+}
+.menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 50px;
+}
+.row label {
+    width: 90px;
+    display: inline-block;
+}
+.row {
+    margin-top: 10px;
+    font-size: 18pt;
+}
+.row input {
+    font-size: 15pt;
+    background-color: #161616;
+    color: #fff;
+}

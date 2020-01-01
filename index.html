@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fractal</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <canvas id="draw" width="1920px" height="976px"></canvas>
+    <div class="menu">
+        <div class="row">
+            <label for=""> Глубина </label>
+            <input name="deep" onchange="show()" id="deep" type="number" value="5">
+        </div>
+        <div class="row">
+            <label for=""> Угл </label>
+            <input name="angle" onchange="show()" id="angle" type="number" value="60">
+        </div>
+        <div class="row">
+            <label for=""> Размер </label>
+            <input name="size" step="5" onchange="show()" id="size" type="number" value="700">
+        </div>
+
+    </div>
+</body>
+</html>
